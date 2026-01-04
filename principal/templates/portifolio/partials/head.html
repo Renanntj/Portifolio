@@ -1,13 +1,15 @@
 <header class="principal-header">
-    <section class='principal-section'>
+    <section class='principal-section' id='home'>
+        <div class="menu-mobile" onclick="toggleMenu()">⋮</div>
+
         <div class="name-header bar">
             <h1 id="renan">Renan</h1>
         </div>
         <div class="bar">
-            <a href="" class="link-header">Inicio</a>
-            <a href="" class="link-header">Sobre</a>
-            <a href="" class="link-header">Projetos</a>
-            <a href="" class="link-header">Contato</a>
+            <a href="#home" class="link-header">Inicio</a>
+            <a href="#sobre" class="link-header">Sobre</a>
+            <a href="#projetos" class="link-header">Projetos</a>
+            <a href="#contato" class="link-header">Contato</a>
         </div>
     </section>
     <section class="principal-content-header">
@@ -28,3 +30,9 @@
         </div>
     </section>
 </header>
+<nav class="mobile-nav" id="mobileNav">
+    <a href="#sobre">Sobre</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#projetos">Projetos</a>
+    <a href="#contato">Contato</a>
+</nav>

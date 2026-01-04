@@ -1,6 +1,6 @@
 {% load static %}
 <main class="principal-main">
-    <section class="sobremim-content">
+    <section class="sobremim-content" id='sobre'>
         <div class="imagem-sobremim">
             <img src="{% static 'principal/images/me.jpeg' %}" alt="Eu">
         </div>
@@ -20,36 +20,83 @@ Meu objetivo como dev backend é construir sistemas sólidos, onde desempenho, s
             </div>
         </div>
     </section>
-    <section class="find-me">
+    <section class="find-me" id="habilidades">
         <div class="find-me-content">
 
             <div class="find-me-content-text">
                 <h1>Minhas Habilidades</h1>
                 <p>Tudo que uso para transformar ideias em algo real.</p>
-                <div class="logos">
-                    logo here
+            </div>
+
+            <div class="skills-grid">
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    <span>Python</span>
                 </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Shell Script">
+                    <span>Shell Script</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    <span>Git</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                    <span>MySQL</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                    <span>HTML</span>
+                </div>
+
+                <div class="skill-card">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                    <span>CSS</span>
+                </div>
+
             </div>
-        </div>
-    </section>
-    <section class="feedback">
-        <div class="feedback-content">
-            <h1>O que dizem sobre mim</h1>
-            <p>Pessoas reais. Projetos reais. Feedback que mostra o impacto do meu trabalho.</p>
+
 
         </div>
-        <div class="feedback-box">
-            box here
-        </div>
-    </section>
-    <section class="projects-here">
-        <div class="projects-here-content">
-            <h1>Projetos em Destaques</h1>
-            <p>Ideias transformadas em experiências claras e intencionais.</p>
-            <div class="project-box">
-                project-box here
-            </div>
-        </div>
+    </section>    
+<section class="projects-section" id="projetos">
+  <div class="projects-container">
+    <header class="projects-header">
+      <h1>Projetos em Destaques</h1>
+      <p>Ideias transformadas em experiências claras e intencionais.</p>
+    </header>
 
-    </section>
+    <div class="projects-grid">
+      <article class="project-card">
+        <h3>Agente de IA</h3>
+        <p>Projeto focado em automação e inteligência artificial, explorando tomada de decisão e interação inteligente.</p>
+        <a href="https://github.com/Renanntj/Agente-de-IA" target="_blank" rel="noopener noreferrer">Ver no GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Detector de Phishing</h3>
+        <p>Aplicação para identificação de tentativas de phishing, analisando padrões suspeitos em links e conteúdos.</p>
+        <a href="https://github.com/Renanntj/Detector-de-Phishing" target="_blank" rel="noopener noreferrer">Ver no GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Gerador de QR Code</h3>
+        <p>Ferramenta simples e eficiente para geração de QR Codes personalizados de forma rápida.</p>
+        <a href="https://github.com/Renanntj/Gerador-de-QRcode" target="_blank" rel="noopener noreferrer">Ver no GitHub →</a>
+      </article>
+
+      <article class="project-card">
+        <h3>Baixar Vídeo do YouTube</h3>
+        <p>Script para download de vídeos do YouTube com foco em praticidade e automação via terminal.</p>
+        <a href="https://github.com/Renanntj/Baixar-video-do-youtube" target="_blank" rel="noopener noreferrer">Ver no GitHub →</a>
+      </article>
+    </div>
+  </div>
+</section>
 </main>
